@@ -1,0 +1,137 @@
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Background */
+        .bg {
+            background-image: url('https://your-background-image-url'); /* ใส่ URL รูปภาพพื้นหลัง */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* High contrast overlay */
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(153, 0, 0, 0.9), rgba(255, 204, 0, 0.9)); /* สีแดงเข้มและสีเหลืองเข้ม */
+            opacity: 0.9;
+            z-index: 0;
+        }
+
+        /* Header */
+        .header {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 1;
+        }
+
+        /* Request Form Button */
+        .header a {
+            background-color: #ffcc00; /* สีเหลืองสด */
+            color: #660000; /* สีแดงเข้ม */
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #660000; /* เส้นขอบสีแดงเข้ม */
+        }
+
+        .header a:hover {
+            background-color: #e6b800;
+            border-color: #660000;
+        }
+
+        /* Centered login box */
+        .login-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.95); /* ทำให้กล่อง login สว่างและชัดเจนขึ้น */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6); /* เพิ่มเงาเข้ม */
+            text-align: center;
+            z-index: 1;
+            width: 400px;
+        }
+
+        /* Logo */
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Title */
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #cc0000; /* สีแดงเข้ม */
+            border-bottom: 4px solid #ffcc00; /* สีเหลืองสด */
+            padding-bottom: 10px;
+        }
+
+        /* Input fields */
+        .login-box input[type="text"], .login-box input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 2px solid #660000; /* สีแดงเข้ม */
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        /* Input focus */
+        .login-box input:focus {
+            border-color: #ffcc00; /* Focus border สีเหลือง */
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 204, 0, 0.8); /* เงาสีเหลือง */
+        }
+
+        /* Login button */
+        .login-box button {
+            width: 100%;
+            padding: 15px;
+            background-color: #cc0000; /* สีแดงเข้ม */
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            border: 2px solid #660000; /* ขอบสีแดงเข้ม */
+        }
+
+        .login-box button:hover {
+            background-color: #b30000; /* สีแดงเข้มกว่าเมื่อ hover */
+        }
+
+        /* Language and contact links */
+        .links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #660000; /* สีแดงเข้ม */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
