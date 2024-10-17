@@ -6,7 +6,6 @@
 
         /* Background */
         .bg {
-            background-image: url('https://your-background-image-url'); /* ใส่ URL รูปภาพพื้นหลัง */
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
